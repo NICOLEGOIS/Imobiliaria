@@ -1,0 +1,31 @@
+POST http://localhost:3333/aluguel
+Content-Type: application/json
+
+{
+    "cordacasa": "Branco e preto",
+    "tamanho": "100m",
+    "precodoaluguel": "1000 Reais"
+}
+
+###
+
+GET http://localhost:3333/aluguel
+
+###
+
+GET http://localhost:3333/aluguel?search=IFMS
+
+###
+
+PUT http://localhost:3333/aluguel/9b449c71-bd12-4b4c-81aa-1e5072ba37e0
+Content-Type: application/json
+
+{
+    "cordacasa": "azul claro e azul escuro",
+    "tamanho": "600m",
+    "precodoaluguel": "500 reais"
+}
+
+###
+
+DELETE http://localhost:3333/aluguel/
